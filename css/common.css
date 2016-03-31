@@ -1,0 +1,110 @@
+.chat-panel blockquote{
+	font-size: 16px !important;
+	border-left: 5px solid #5CB85C;
+}
+
+.chat-panel .author{
+	color: #5CB85C;	
+}
+
+.chat-panel blockquote footer:before{
+	display: none;
+}
+
+.chat-panel blockquote.system{
+	padding: 0;
+	border-left: none;
+	text-align: center;
+}
+
+.chat-panel blockquote p{
+	position: relative;
+    word-break: break-word;
+}
+
+.chat-panel_list, .users-panel{
+    max-height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chat-panel_msg{
+	resize: none;
+}
+
+.chat-panel_hint{
+	margin-bottom: 0;
+}
+
+.chat-panel_hint small{
+	margin-left: 5px;
+}
+
+.chat-panel_list .time{
+	position: absolute;
+	right: 0;
+	top: -28px;
+	
+	font-size: 10px;
+	color: #A2A2A2;
+}
+
+.page-overlay{
+	position: fixed;
+	z-index: 999;
+
+	width: 100vw;
+	height: 100vh;
+
+	background-color: #5cb85c;
+
+	opacity: 1;
+	transform: translate(0,0);
+	transition: 0.3s ease-in transform, 0.8s ease-in opacity;
+
+	text-align: center;
+
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.page-overlay_title{
+	color: #fff;
+	text-align: right;
+}
+
+.page-overlay.slide{
+	transform: translate(-100%, 0);
+	opacity: 0.2;
+}
+
+.page-overlay:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+
+	height: 100%;
+	width: 0;
+	margin-left: -4px;
+}
+
+.page-overlay.refresh .page-overlay_ref{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.page-overlay_ref{
+	display: inline-block;
+	vertical-align: middle;
+
+	margin: 0 20px;
+
+	opacity: 0;
+	transition: 0.3s ease-in opacity;
+
+	user-select: none;
+	-webkit-user-select: none;
+	pointer-events: none;
+
+	text-align: left;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "simpleChatApp",
+  "version": "1.0.0",
+  "description": "Test Chat App",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DmitryBrovka/simpleChatApp`"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "browserify": "^13.0.0",
+    "inert": "^3.2.0",
+    "nodejs-websocket": "^1.4.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "engines": {
+    "node": ">=4.2.1"
+  }
+}

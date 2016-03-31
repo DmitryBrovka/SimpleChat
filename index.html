@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My chat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<section class="page-overlay" id="jsPageOverlay">
+		<div class="page-overlay_ref">
+			<h6 class="page-overlay_title">Simple chat</h6>
+			<div class="panel panel-success">
+				<div class="panel-body">
+				    You didn't enter a nickname. Please click to button below or refresh this page
+				</div>
+				<div class="panel-footer">
+					<input id="jsRefreshChat" type="button" onclick="location.reload()" name="" value="I want to enter my nickname" class="btn btn-success">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>Simple chat</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-12">
+				<div class="users-panel panel panel-default">
+					<div class="panel-heading">Users online</div>
+					<div class="panel-body" id="jsUsersList"></div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="chat-panel panel panel-default">
+					<div class="chat-panel_list panel-body" id="jsMessagesList"></div>
+					<div class="panel-footer">
+						<form id="form" name="form" class="input-group input-group-sm">
+							<textarea id="msg" name="msg" class="form-control chat-panel_msg" placeholder="Type message..."></textarea>
+							<span class="input-group-btn">
+							    <button type="submit" name="submitForm" class="btn btn-success">Send</button>
+							</span>
+						</form>
+						<div class="row">
+							<h6 class="col-md-6 chat-panel_hint">
+								<small>Ctrl+Enter -> Send Message</small>
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="application.js"></script>
+</body>
+</html>
